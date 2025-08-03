@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ece6eb; 
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #b8b1b9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #b71754; 
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b71754;
+}
+
+.main-title {
+    font-size: 2em;
+    color: #b71754;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+/* Input Form Section */
+.input-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b71754;
+}
+
+.employee-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+label {
+    font-weight: bold;
+    color: #b71754;
+    min-width: 50px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px 12px;
+    border: 1px solid #b0d4f1;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 120px;
+    background-color: #f0f8ff;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #161617;
+}
+
+/* Buttons */
+button {
+    padding: 8px 16px;
+    background-color: #b71754;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #b65c6b;
+}
+
+/* Table Section */
+.table-section {
+    margin-top: 20px;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #d1e7f7;
+}
+
+.employee-table th {
+    background-color: #dff1fd;
+    font-weight: bold;
+    color: #b71754;
+}
+
+.employee-table tr:hover {
+    background-color: #f0f8ff;
+}
+
+.toggle-btn {
+    padding: 6px 12px;
+    background-color: #540830;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.toggle-btn:hover {
+    background-color: #d23290;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .employee-table {
+        font-size: 12px;
+    }
+
+    .employee-table th,
+    .employee-table td {
+        padding: 8px;
+    }
+}
